@@ -4,13 +4,15 @@
     <div class="overflow-x-auto">
       <table class="min-w-full border-collapse border border-gray-300">
         <thead>
-          <tr class="bg-gray-200">
-            <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
-            <th class="border border-gray-300 px-4 py-2 text-left">Email</th>
-            <th class="border border-gray-300 px-4 py-2 text-left">Number</th>
-            <th class="border border-gray-300 px-4 py-2 text-left">Doctor</th>
-            <th class="border border-gray-300 px-4 py-2 text-left">Schedule</th>
-            <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
+            <tr class="bg-blue-500 bg-opacity-60">
+            <th class="border border-gray-300 px-4 py-2 text-center">Name</th>
+            <th class="border border-gray-300 px-4 py-2 text-center">Email</th>
+            <th class="border border-gray-300 px-4 py-2 text-center">Number</th>
+            <th class="border border-gray-300 px-4 py-2 text-center">Doctor</th>
+            <th class="border border-gray-300 px-4 py-2 text-center">
+              Schedule
+            </th>
+            <th class="border border-gray-300 px-4 py-2 text-center">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -19,19 +21,19 @@
             :key="appointment._id"
             class="even:bg-gray-50 hover:bg-gray-100"
           >
-            <td class="border border-gray-300 px-4 py-2">
+            <td class="border border-gray-300 text-center px-4 py-2">
               {{ appointment.name }}
             </td>
-            <td class="border border-gray-300 px-4 py-2">
+            <td class="border border-gray-300 text-center px-4 py-2">
               {{ appointment.email }}
             </td>
-            <td class="border border-gray-300 px-4 py-2">
+            <td class="border border-gray-300 text-center px-4 py-2">
               {{ appointment.number }}
             </td>
-            <td class="border border-gray-300 px-4 py-2">
+            <td class="border border-gray-300 text-center px-4 py-2">
               {{ appointment.doctor }}
             </td>
-            <td class="border border-gray-300 px-4 py-2">
+            <td class="border border-gray-300 text-center px-4 py-2">
               {{ appointment.schedule }}
             </td>
             <td class="border border-gray-300 px-4 py-2 text-center">
